@@ -1,0 +1,98 @@
+body {
+  background-image: url('bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  margin: auto;
+  max-width: 250px;
+  height: auto;
+  border-radius: 0%;
+}
+
+.info {
+  margin-top: 20px;
+  color: white;
+}
+
+h2 {
+  font-size: 20px;
+  margin-top: 30px;
+  color: white;
+}
+
+p {
+  margin: 10px 0;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: -webkit-flex;
+
+  display: -moz-flex;
+
+  display: -ms-flex;
+
+  display: -o-flex;
+
+  display: flex;
+
+  justify-content: center;
+
+  min-height: 100vh;
+
+  text-align: center;
+
+  background-color: #000000;
+}
+
+h1 {
+  font-weight: 500;
+
+  font-size: 5vw;
+
+  line-height: 5vw;
+}
+
+h1 span {
+  animation: glowtext 3000ms infinite both;
+
+  animation-delay: calc((var(--char-index) + 1) * 400ms);
+
+  text-transform: uppercase;
+
+  text-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1), 0 0 40px #0af4ff, 0 0 60px #0af4ff, 0 0 80px #0af4ff, 0 0 100px #0af4ff;
+}
+
+@keyframes glowtext {
+  0% {
+    font-size: 7vw;
+  }
+
+  60% {
+    font-size: 10vw;
+  }
+
+  100% {
+    font-size: 7vw;
+  }
+}
